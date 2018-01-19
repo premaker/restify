@@ -16,3 +16,15 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+/**
+ * Register routes of the enabled modules.
+ */
+if (! app()->routesAreCached()) {
+    $modules = app('modules')->enabled();
+    foreach ($modules as $module) {
+        if (file_exists($routePath = $module->getPath().'/Http/routes.php')) {
+            require $routePath;
+        }
+    }
+}
