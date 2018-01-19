@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "premaker/restify",
+    "description": "RESTify, a modular and scalable RESTful API framework based on Laravel.",
+    "keywords": ["framework", "laravel", "restify", "rest", "api"],
     "license": "MIT",
     "type": "project",
     "require": {
