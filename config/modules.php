@@ -143,10 +143,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'nwidart',
+        'vendor' => 'premaker',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'Mohamed Hamdallah',
+            'email' => 'moh8med@gmail.com',
         ],
     ],
     /*
