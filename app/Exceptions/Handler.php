@@ -98,6 +98,10 @@ class Handler extends ExceptionHandler
 
             abort(500, $exception->getMessage());
 
+        } elseif ($exception instanceof \Exception) {
+
+            abort(500, $exception->getMessage());
+
         }
 
         return parent::render($request, $exception);

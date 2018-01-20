@@ -57,7 +57,7 @@ if (! function_exists('request_token')) {
 
         $request = app('request');
 
-        return $_request_token = $request->header('Authorization') ? str_replace('Bearer ', '', (string) $request->header('Authorization')) : $request->input('token');
+        return $_request_token = $request->header('Authorization') ? $request->bearerToken() : $request->input('token');
     }
 }
 
