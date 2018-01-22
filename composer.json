@@ -1,7 +1,7 @@
 {
     "name": "premaker/restify",
-    "description": "RESTify, a modular and scalable RESTful API framework based on Laravel.",
-    "keywords": ["framework", "laravel", "restify", "rest", "api"],
+    "description": "Restify, a modular and scalable RESTful API framework based on Laravel.",
+    "keywords": ["framework", "laravel", "restify", "rest", "restful", "api"],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -12,7 +12,8 @@
         "laravel/tinker": "~1.0",
         "nwidart/laravel-modules": "^2.7",
         "oomphinc/composer-installers-extender": "^1.1",
-        "tymon/jwt-auth": "1.0.0-rc.1"
+        "tymon/jwt-auth": "1.0.0-rc.1",
+        "premaker/restify-user-module": "^1.0"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
