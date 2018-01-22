@@ -12,7 +12,6 @@
         "laravel/tinker": "~1.0",
         "nwidart/laravel-modules": "^2.7",
         "oomphinc/composer-installers-extender": "^1.1",
-        "tymon/jwt-auth": "1.0.0-rc.1",
         "premaker/restify-user-module": "^1.0"
     },
     "require-dev": {
