@@ -161,8 +161,7 @@ class Response
     public function unauthorized($messages = null)
     {
         if (! $messages) {
-            $messages = 'Invalid or expired authentication token.';
-            // $messages = 'Authentication Failed: Invalid or expired token.';
+            $messages = trans('messages.invalid_token');
         }
 
         return $this->error($messages, 401);
@@ -171,8 +170,7 @@ class Response
     public function forbidden($messages = null)
     {
         if (! $messages) {
-            // $messages = 'You are not permitted to perform the requested operation.';
-            $messages = 'Insufficient privileges to perform this action.';
+            $messages = trans('messages.forbidden');
         }
 
         return $this->error($messages, 403);
@@ -181,8 +179,7 @@ class Response
     public function notFound($messages = null)
     {
         if (! $messages) {
-            $messages = 'The resource you request was not found.';
-            // $messages = 'The page you requested was not found, use another endpoint instead.';
+            $messages = trans('messages.not_found');
         }
 
         return $this->error($messages, 404);
@@ -191,7 +188,7 @@ class Response
     public function conflict($messages = null)
     {
         if (! $messages) {
-            $messages = 'The request could not be completed due to a conflict with the current state of the target resource.';
+            $messages = trans('messages.conflict');
         }
 
         return $this->error($messages, 409);
@@ -224,7 +221,7 @@ class Response
     public function internalServerError($messages = null)
     {
         if (! $messages) {
-            $messages = 'An unexpected error occurred.';
+            $messages = trans('messages.unexpected_error');
         }
 
         return $this->error($messages, 500);
